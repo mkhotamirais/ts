@@ -1,0 +1,6 @@
+// sebelum masuk ke sini, pelajari typescript 'dea'
+
+js: number, string, boolean, null, undefined, object;
+ts: any, unknown, never, enum, tuple
+
+"noImplisitAny": true --- jika ada yang tipe datanya 'any' maka tidak akan dinilai error;
