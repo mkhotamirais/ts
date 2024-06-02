@@ -1,0 +1,22 @@
+- syaratnya harus terinstall nodejs dan typescript
+https://nodejs.org/en
+npm i -g typescript
+lalu pastikan sudah terinstall atau belum
+node -v;
+npm -v;
+npx -v;
+tsc -v;
+
+* tanpa tsconfig.json
+- buat folder bebas
+- buat file index.ts (isi syntax apapun di dalamnya)
+- terminal `npm index.ts` --- maka akan terbentuk file index.js hasil kompilasi file index.ts;
+
+* degan tsconfig.json
+- buat folder bebas
+- terminal `tsc --init` maka akan terbentuk file tsconfig.json berisi banyak hal;
+"rootDir": "./src"
+"outDir": "./dist"
+"removeComment: true --- agar hasil kompilasinya tidak menyertakan komentar.
+- lalu buat folder src, buat index.ts, isi apa saja;
+- terminal `tsc` --- maka akan terbentuk folder dist berisi file index.js
