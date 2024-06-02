@@ -1,0 +1,16 @@
+prerequisite: lihat dea dan mosh;
+
+https://survey.stackoverflow.co/2023/#technology
+
+terminal `tsc -w`
+tsc artinya compile semua file .ts yang ada secara default. jadi kalau ada dua file .ts di mana saja maka akan dicompile otomatis;
+-w artinya re-compile setiap ada file yang disimpan
+
+untuk menghindari compile otomatis, tapi hanya khusus compile file tertentu saja tulis parameter berikut di file tsconfig.js
+{
+    "compilerOptions": {...},
+    "include": {"src"}
+}
+maka hanya file .ts yang ada di dalam folder src saja yang dicompile
+
+terminal `tsc --noEmitOnError -w` // jika ingin menjalankan noEmitOnError sebelum dicompile
